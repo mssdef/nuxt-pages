@@ -1,3 +1,10 @@
 <template>
-  <h2>Users page here</h2>
+  <div>
+    please select id
+  </div>
 </template>
+
+<script>
+  export default {
+  }
+</script>

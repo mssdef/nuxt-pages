@@ -1,16 +1,9 @@
 <template>
   <div>
-    <Header />
-
+    <div class="header">USERS</div>
     <Nuxt />
   </div>
 </template>
-
-<script>
-  import Header from '~/components/Header.vue';
-  export default {
-  }
-</script>
 
 <style>
 html {

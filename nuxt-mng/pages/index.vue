@@ -1,36 +1,19 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        nuxt-mng
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <nuxt-link to="/users">Users</nuxt-link>
+    <button @click="showProducts">Show Products</button>
   </div>
 </template>
 
 <script>
-export default {}
+  export default {
+    methods: {
+      showProducts() {
+        this.$router.push('/products');
+      }
+    }
+  }
 </script>
-
 <style>
 .container {
   margin: 0 auto;
@@ -38,7 +21,9 @@ export default {}
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .title {

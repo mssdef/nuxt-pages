@@ -1,16 +1,8 @@
 <template>
   <div>
-    <Header />
-
-    <Nuxt />
+    <h2>error occured</h2>
   </div>
 </template>
-
-<script>
-  import Header from '~/components/Header.vue';
-  export default {
-  }
-</script>
 
 <style>
 html {
